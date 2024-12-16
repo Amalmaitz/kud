@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Study Ku</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            padding: 0;
+            color: #333;
+        }
+    .universitylogo img {
+        width: 58px;
+        height: 58px;
+        margin-top: 32px;
+        margin-left: 90px;
+        gap: 0px;
+        opacity: 0px;
+    }
+    .decodelogo img {
+        height: 125px;
+        width: 125px;
+        margin-top: 5px;
+        float:right;
+        margin-right: 80px;
+        gap: 0px;
+        opacity: 0px;     
+    }
+    .forms{
+        display:none;
+    }
+    .head{
+        padding-left: 102px;
+        padding-top: 100px;
+    }
+    span{
+        color: #009688;
+    }
+    h1{
+        font-family: "Montserrat", sans-serif;
+        font-size: 57.9px;
+        font-weight: 700;
+        line-height: 65.23px;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        margin-top: 17px;  
+        color:#000000;
+    }
+    p{
+        font-family: "Montserrat", sans-serif;
+        font-size: 15.52px;
+        font-weight: 400;
+        line-height: 18.41px;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        margin-top: 22px;  
+        color: #000000;
+    }
+
+    .form-control{
+        font-family: "Montserrat", sans-serif;
+        height: 46.48px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        margin-top: 20px;  
+        border:0px;
+        border-radius: 8px;
+        margin-top: 40px;  
+    }
+    button{
+        background-color: #B0B0B0;
+        width: 112.9px;
+        height: 32.45px;
+        gap: 0px;
+        border-radius: 8.11px;
+        opacity: 0px; 
+        margin-top: 28px;
+        color: #ffffff;
+        transition: background-color 0.3s ease;
+    }
+
+    .image3 img{
+        width: 725px;
+        height: 640px;
+        opacity: 0px;
+        float:right;
+    }
+    .click{
+        display:none;
+    }
+    @media only screen and (min-width:991.2px) and (max-width:1200px){
+        .universitylogo img {
+            width: 58px;
+            height: 58px;
+            margin-top: 32px;
+            margin-left: 90px;
+            gap: 0px;
+            opacity: 0px;
+        }
+        .decodelogo img {
+            height: 125px;
+            width: 125px;
+            margin-top: 5px;
+            float:right;
+            margin-right: 80px;
+            gap: 0px;
+            opacity: 0px;     
+        }
+      
+        .head {
+            padding-left: 8px;
+            padding-top: 0px;
+        }
+        .inside-head{
+            padding-top: 30px;
+            padding-left: 12px;
+        }
+        h1{
+            font-family: "Montserrat", sans-serif;
+            font-size: 60.9px;
+            font-weight: 700;
+            line-height: 65.23px;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            margin-top: 17px;  
+            color:#000000;
+        }
+        p{
+            font-family: "Montserrat", sans-serif;
+            font-size: 25.52px;
+            font-weight: 400;
+            line-height: 18.41px;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            margin-top: 27px;  
+            color: #000000;
+        }
+        .forms{
+            display:block;
+        }
+         .form {
+            display:none;
+            margin-left:10px;
+            margin-right: 10px;
+        }        
+        .click {
+            display: flex;
+            place-items: center;
+            margin:0 auto;
+            align-items:center;
+            justify-content:center;
+        }
+        button {
+            width: 112.9px;
+            height: 32.45px;
+            border-radius: 8.11px;
+            margin-top: 40px;
+     
+        }
+        .image3{
+            align-items:center;
+            justify-content:center;
+        }
+        .image3 img {
+            width: 825px;
+            height: 740px;
+            align-items:center;
+            align-items:center;
+            justify-content:center;
+            margin-right:150px;
+           }
+        .clicks{
+            display:none;
+        }
+    }
+    @media only screen and (min-width:768.2px) and (max-width:991.8px){
+        .universitylogo img {
+            width: 58px;
+            height: 58px;
+            margin-top: 32px;
+            margin-left: 90px;
+            gap: 0px;
+            opacity: 0px;
+        }
+        .decodelogo img {
+            height: 125px;
+            width: 125px;
+            margin-top: 5px;
+            float:right;
+            margin-right: 80px;
+            gap: 0px;
+            opacity: 0px;     
+        }
+      
+      
+        .head {
+            padding-left: 8px;
+            padding-top: 0px;
+        }
+        .inside-head{
+            padding-top: 30px;
+            padding-left: 12px;
+        }
+        h1 {
+            font-size: 60.9px;
+            font-weight: 700;
+            line-height: 100.23px; 
+        }
+        p {
+            font-size: 19.52px;
+            font-weight: 400;
+            line-height: 28.41px;
+            margin-top: 15px;  
+        }
+        .forms{
+            display:block;
+        }
+         .form {
+            display:none;
+            margin-left:10px;
+            margin-right: 10px;
+        }        
+        .click {
+            display: flex;
+            place-items: center;
+            margin:0 auto;
+            align-items:center;
+            justify-content:center;
+        }
+        button {
+            width: 112.9px;
+            height: 32.45px;
+            border-radius: 8.11px;
+            margin-top: 40px;
+     
+        }
+        .image3{
+            align-items:center;
+            justify-content:center;
+        }
+        .image3 img {
+            width: 825px;
+            height: 740px;
+            align-items:center;
+            align-items:center;
+            justify-content:center;
+            margin-right:50px;
+           }
+        .clicks{
+            display:none;
+        }
+    }
+    @media only screen and (min-width:577.2px) and (max-width:768.98px) {
+        .universitylogo img {
+            width: 35px;
+            height: 35px;
+            margin-top: 32px;
+            margin-left: 5px;
+           
+        }
+        .decodelogo img {
+            width: 133px;
+            height: 72px;
+            margin-top: 18px;
+            float:right; 
+            margin-right: 0;      
+        }
+      
+        .head {
+            padding-left: 8px;
+            padding-top: 0px;
+        }
+        .inside-head{
+            padding-top: 30px;
+            padding-left: 15px;
+        }
+        h1 {
+            font-size: 54.9px;
+            line-height: 60.23px; 
+        }
+        p {
+            font-size: 23.52px;
+            line-height: 22.41px;
+            margin-top: 25px;  
+        }
+        .forms{
+            display:block;
+        }
+         .form {
+            display:none;
+            margin-left:10px;
+            margin-right: 10px;
+        }        
+        .click {
+            display: flex;
+            place-items: center;
+            margin:0 auto;
+            align-items:center;
+            justify-content:center;
+        }
+        button {
+            width: 112.9px;
+            height: 32.45px;
+            border-radius: 8.11px;
+            margin-top: 20px;
+     
+        }
+        .image3{
+            width: 600px;
+            margin-left: 0px;
+       
+        }
+        .image3 img {
+            height: 490.49px;
+            margin-right: 10px;
+            margin-left: 0px;
+           }
+        .clicks{
+            display:none;
+        }
+    }
+    @media only screen and (max-width:577.98px) {
+        .universitylogo img {
+            width: 35px;
+            height: 35px;
+            margin-top: 32px;
+            margin-left: 5px;
+           
+        }
+        .decodelogo img {
+            width: 115px;
+            height: 115px;
+            margin-top: 0px;
+            float:right; 
+            margin-right: 0;      
+        }
+      
+        .head {
+            padding-left: 8px;
+            padding-top: 0px;
+        }
+        .inside-head{
+            padding-top: 30px;
+            padding-left: 12px;
+        }
+        h1 {
+            font-size: 44.9px;
+            font-weight: 700;
+            line-height: 50.23px; 
+        }
+        input{
+            font-family: Open Sans;
+            font-size: 11.28px;
+            font-weight: 400;
+            line-height: 18.09px;
+        }
+        p {
+            font-size: 12.52px;
+            font-weight: 400;
+            line-height: 22.41px;
+            margin-top: 16px;  
+        }
+        .forms{
+            display:block;
+            margin-top: -30px;
+        }
+         .form {
+            display:none;
+        }       
+    
+        .click {
+            display: flex;
+            place-items: center;
+            margin:0 auto;
+            align-items:center;
+            justify-content:center;
+        }
+        button {
+            width: 112.9px;
+            height: 32.45px;
+            border-radius: 8.11px;
+            margin-top: 20px;
+     
+        }
+        .image3{
+            margin-top: -30px;
+            margin-left: 0px;
+        }
+        .image3 img {
+            height: 380px;
+            margin-right: 0px;
+            margin-left: 0px;
+           }
+        .clicks{
+            display:none;
+        }
+    }
+    </style>
+</head>
+<body>
+    <first-section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 universitylogo">
+                <img src="ku.png">
+            </div>
+            <div class="col-6 decodelogo">
+                <img src="dec.png">
+            </div>
+        </div>
+    </div>
+</first-section>
+    
+<second-section>
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="forms">
+              <div class="search">
+                <form>
+                    <input type="text" class="form-control" id="search" placeholder="Search for your Notes / Question paper"  autocomplete="off">
+                    
+                     
+                    <div id="suggestions" class="suggestions" style="display: none;">
+                        <!-- Suggestions will appear here dynamically -->
+                    </div>
+                </form>
+               </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-lg-12 col-xl-4 col-xxl-4 head">
+                <div class="inside-head">
+                  <h1><span>UCEK</span> Study</h1>
+                  <h1>Vault</h1>
+                  <p>Search it.Get it.</p>
+                </div>
+                <div class="form">
+                    <div class="search">
+                        <form>
+                            <input type="text" class="form-control" id="name" placeholder="Search for your Notes / Question paper"  autocomplete="off">                    
+                            <div id="suggestions" class="suggestions" style="display: none;">
+                                <!-- Suggestions will appear here dynamically -->
+                            </div>
+                        </form>
+                       </div>
+                </div>
+                <div class="clicks">
+                    <a href="{% url 'upload_pdf' %}">
+                        <button type="submit" class="button" style="background-color: #009688;"   >Upload Notes</button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-12  col-xl-8 col-xxl-8 image3">
+                <img src="feedimg.png"  class="img-fluid" alt="...">
+            </div>
+        </div>
+    </div>
+
+    <div class="click">
+        <a href="{% url 'upload_pdf' %}">
+        <button type="submit" class="button" style="background-color: #009688;"   >Upload Notes</button>
+        </a>
+    </div>
+</second-section>
+
+
+
+<div id="selected-pdfs" style="margin-top: 20px; display: flex; flex-wrap: wrap;">
+    <!-- Selected PDF squares will be displayed here -->
+</div>
+
+
+
+
+<script>
+    const searchInput = document.getElementById('search');
+    const suggestionsBox = document.getElementById('suggestions');
+
+    searchInput.addEventListener('input', function() {
+        const query = this.value;
+
+        // Fetch suggestions from the server
+        if (query.length > 0) {
+            fetch(`?q=${query}`, {
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                suggestionsBox.innerHTML = ''; // Clear previous suggestions
+                if (data.suggestions.length > 0) {
+                    
+                    
+                    suggestionsBox.style.display = 'block'; // Show suggestions
+                    data.suggestions.forEach(suggestion => {
+                        const div = document.createElement('div');
+                        div.textContent = suggestion;
+
+                        // Find the corresponding PDF URL to open in a new tab
+                        const pdfUrl = data.pdfUrls[suggestion]; // Accessing the PDF URL
+
+                        div.addEventListener('click', function() {
+                            window.open(pdfUrl, '_blank'); // Open the PDF in a new tab
+                            suggestionsBox.style.display = 'none'; // Hide suggestions
+                        });
+                        suggestionsBox.appendChild(div);
+                    });
+                } else {
+                    suggestionsBox.style.display = 'none'; // Hide if no suggestions
+                }
+            });
+        } else {
+            suggestionsBox.style.display = 'none'; // Hide if query is empty
+        }
+    });
+
+    // Hide suggestions if clicking outside
+    document.addEventListener('click', function(event) {
+        if (!suggestionsBox.contains(event.target) && event.target !== searchInput) {
+            suggestionsBox.style.display = 'none';
+        }
+    });
+    let isAdding = false; // To track whether we are in add mode
+let selectedPDFs = []; // To keep track of selected PDF names
+
+document.getElementById('add-button').addEventListener('click', function() {
+isAdding = !isAdding; // Toggle adding mode
+
+// Change button text based on mode
+this.textContent = isAdding ? ' - ' : ' + '; // Change button text to '-' when in add mode
+});
+
+// Function to add selected PDF to the selected-pdfs div
+function addSelectedPDF(pdfName) {
+if (!isAdding) return; // Only allow adding when in add mode
+
+if (!selectedPDFs.includes(pdfName)) {
+    selectedPDFs.push(pdfName); // Add the PDF name to the list
+    updateSelectedPDFsDisplay();
+}
+}
+// Function to add suggestion text to the search input box
+function addToSearchBox(pdfName) {
+document.getElementById('search').value = pdfName;
+}
+
+// Display suggestions with arrow icons
+function displaySuggestions(results) {
+const suggestionsDiv = document.getElementById("suggestions");
+suggestionsDiv.innerHTML = ""; // Clear previous suggestions
+
+results.forEach((pdf) => {
+    // Create the suggestion item container
+    const suggestionItem = document.createElement("div");
+    suggestionItem.classList.add("suggestion-item");
+
+    // Add the PDF name
+    const suggestionText = document.createElement("span");
+    suggestionText.textContent = pdf.name;
+    
+    // Add the arrow icon
+    const arrowIcon = document.createElement("i");
+    arrowIcon.classList.add("fa", "fa-arrow-right"); // Font Awesome classes
+
+    // Append the text and icon to the suggestion item
+    suggestionItem.appendChild(suggestionText);
+    suggestionItem.appendChild(arrowIcon);
+
+    // Append the suggestion item to the suggestions div
+    suggestionsDiv.appendChild(suggestionItem);
+
+    // Event listener to add suggestion to search box on click
+    suggestionItem.addEventListener("click", () => {
+        document.getElementById("search").value = pdf.name;
+        suggestionsDiv.style.display = "none"; // Hide suggestions after selection
+    });
+});
+
+// Display suggestions div if there are results
+suggestionsDiv.style.display = results.length > 0 ? "block" : "none";
+}
+// Track the current selection in the suggestion list
+
+// Function to update the display of selected PDFs
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</script>
+</body>
+</html>
